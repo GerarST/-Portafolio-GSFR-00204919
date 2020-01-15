@@ -2,23 +2,54 @@
 using namespace std;
 
 int main(){
-     int *ma1=0;
-     int n=0,m=0;
+    
      int matriz1[2][2];
      int matriz2[2][2];
  
+     //LLENANDO MATRICES
+     cout<<"Llenando la matriz 1: \n";
+
+       for(int i = 0; i < 2; i++){ 
+           cin.ignore();
+           cout << "Fila ["<<i+1<<"] , ";
+        for(int j = 0; j < 2; j++){
+            cout << "Columna ["<<j+1<<"]: ";
+            cin >> matriz1[i][j];
+        }
+    }
+     cout<<"\nLlenando la matriz 2: \n";
+
        for(int i = 0; i < 2; i++){
-        cout << "NumeroF ["<<i + 1<<"] " << endl;
+           cout << "Fila ["<<i+1<<"]: ";
         for(int j = 0; j < 2; j++){
-            cout << "NumeroC  ["<<j + 1<<"]: "; cin >> matriz1[i][j];
+            cout << "Columna ["<<j+1<<"]: ";
+        cin >> matriz2[i][j];
         }
     }
-         for(int i = 0; i < 2; i++){
-        cout << "NumeroF2 ["<<i + 1<<"] " << endl;
+      //MOSTRANDO MATRICES
+         cout<<"Mostrando la matriz 1: \n";
+
+       for(int i = 0; i < 2; i++){ 
         for(int j = 0; j < 2; j++){
-            cout << "NumeroC2  ["<<j + 1<<"]: "; cin >> matriz2[i][j];
-            *ma1=**matriz2;
+            cout << matriz1[i][j];
+            }
+            cout << endl;
         }
-    }
-    cout<<"xd"<<ma1<<endl;
+         cout<<"Mostrando la matriz 2: \n";
+
+       for(int i = 0; i < 2; i++){ 
+        for(int j = 0; j < 2; j++){
+            cout << matriz2[i][j];
+            }
+            cout << endl;
+        }
+                    
+       //SUMANDO MATRICES
+       cout<<"La suma es: \n";
+        for(int i = 0; i < 2; i++){ 
+         for(int j = 0; j < 2; j++){
+            cout << matriz1[i][j] + matriz2[i][j];
+            }
+            cout << endl;
+        }
 }
