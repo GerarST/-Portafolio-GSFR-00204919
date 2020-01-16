@@ -12,8 +12,10 @@ struct continente{
 };
 
 struct continente pais[5];
+
 int cantPaises = 0;
 void ingreso();
+int PoblacionT(continente pais);
 
 
 int main(){
@@ -26,6 +28,7 @@ cin.ignore();
 do{
 ingreso();
 }while(opcion=='n');
+
 }
 
 
@@ -46,4 +49,14 @@ void ingreso(){
         cantPaises++;
     }
     else cout << "Espacio para pais insuficiente!\n";
+}
+
+int PoblacionT(continente pais){
+
+for (int i = 0; i < pais; i++)
+{
+  /* code */
+}
+
+
 }
