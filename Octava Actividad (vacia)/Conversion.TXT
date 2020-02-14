@@ -1,0 +1,6 @@
+    Conversion de infija a Postfija
+Ejercicio 1: A - B / (C * D $ E)            Ejercicio 2: ((A + B) ∗ C − (D − E))$(F + G)
+    A - B / (C * DE$)                               (AB+ * C - DE-) $ FG+
+    A - B / (CDE$*)                                 (AB+C* - DE-) $ FG+
+    A - BCDE$*/                                     (AB+C*DE--) $ FG+
+    ABCDE$*/-                                       AB+C*DE--FG+$

@@ -1,0 +1,10 @@
+Plato RecorrerPila(stack <Plato> Pila){
+    CopiadePila = Pila;
+    Plato aux;
+    while(!Pila.empty()){
+        aux = Pila.top();
+        CopiadePila.push(aux);
+        Pila.pop();
+    }
+    return aux;
+}

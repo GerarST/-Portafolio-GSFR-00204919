@@ -16,6 +16,7 @@ struct actividad2{
 typedef struct actividad2 Actividadcopy;
 
 queue <Actividad> ColaDeActividades;
+queue <Actividadcopy> ColaDeActividades2;
 
 void agregar();
 void borrar();

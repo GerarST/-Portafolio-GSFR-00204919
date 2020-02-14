@@ -8,10 +8,10 @@ struct vasos{
 };
 typedef struct vasos *Vaso;
 
-void initialize(Vaso *v);
+void initialize(Vaso *v, string color, string materiañ);
 void push(Vaso *v);
 string pop(Vaso *v);
-string top(Vaso *v)
+string top(Vaso *v);
 
 int main(){
     Vaso unVaso;
@@ -29,7 +29,7 @@ bool empty(Vaso *v){
     return *v == NULL;
 }
 
-void push(Vaso *v){
+void push(Vaso *v, string color, string material){
     vasos *unVaso;
     unVaso = new vasos;
     unVaso->color = color;
